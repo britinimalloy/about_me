@@ -51,12 +51,12 @@ if (question5 === 'no' || question5 === 'n') {
   alert(user + ', you are horrendous at following instructions. I am just about done with your lack of listening!');
 }
 
-var question6 = prompt('').toLowerCase();
+var question6 = prompt(user + ', here\'s your final question: is core day my favorite day?').toLowerCase();
 console.log(question6);
 if (question6 === 'yes' || question6 === 'y') {
-  // alert(user + ', you are correct! Congratulations, you made it through the game alive!');
+  alert(user + ', you are correct! Congratulations, you made it through the game alive!');
 } else if (question6 === 'no' || question6 === 'n') {
-  // alert(user + ', you are incorrect! Watch it, too many wrong answers and you may not live through this game...');
+  alert(user + ', you are incorrect! I\'m not sure what to do with you...');
 } else {
-  // alert(user + ', you are terrible at following instructions. I will take mercy for now, DON\'T SCREW UP AGAIN!!');
+  alert(user + ', this is the end of the game! PREPARE TO DIE!!');
 }
