@@ -24,39 +24,39 @@ if (question2 === 'yes' || question2 === 'y') {
 var question3 = prompt('Second yes or no answered question, ' + user + ': do you think I do cardio?').toLowerCase();
 console.log(question3);
 if (question3 === 'no' || question3 === 'n') {
-  alert(user + ', you are correct! Congratulations, you get to live for another round. I don\'t like cardio');
+  alert(user + ', you are correct! Congratulations, you get to live for the 3rd round. I don\'t like cardio');
 } else if (question3 === 'yes' || question3 === 'y') {
   alert(user + ', you are incorrect! Watch it, too many wrong answers and you may not live through this game...just like I don\'t when forced to do cardio');
 } else {
   alert(user + ', you are terrible at following instructions. I have told you, I may not take mercy on you, DON\'T SCREW UP AGAIN!!');
 }
 
-var question4 = prompt('').toLowerCase();
+var question4 = prompt(user + ', do you think I can back squat more than my body weight?').toLowerCase();
 console.log(question4);
 if (question4 === 'yes' || question4 === 'y') {
-  // alert(user + ', you are correct! Congratulations, you get to live for another round.');
+  alert(user + ', you are correct! Congratulations, you get to live for the 4th round.');
 } else if (question4 === 'no' || question4 === 'n') {
-  // alert(user + ', you are incorrect! Watch it, too many wrong answers and you may not live through this game...');
+  alert(user + ', you are incorrect! Watch it, I don\'t like to be insulted!');
 } else {
-  // alert(user + ', you are terrible at following instructions. I will take mercy for now, DON'T SCREW UP AGAIN!!');
+  alert(user + ', you are terrible at following instructions. I am getting irritated with you...');
 }
 
-var question5 = prompt('').toLowerCase();
+var question5 = prompt(user + ', are you under the illusion that I like to run?').toLowerCase();
 console.log(question5);
 if (question5 === 'no' || question5 === 'n') {
-  // alert(user + ', you are correct! Congratulations, you get to live for another round.');
+  alert(user + ', you are correct! Congratulations, you get to live for the final round because you listen.');
 } else if (question5 === 'yes' || question5 === 'y') {
-  // alert(user + ', you are incorrect! Watch it, too many wrong answers and you may not live through this game...');
+  alert(user + ', don\'t you listen?? I HATE CARDIO!!!');
 } else {
-  // alert(user + ', you are terrible at following instructions. I will take mercy for now, DON'T SCREW UP AGAIN!!');
+  alert(user + ', you are horrendous at following instructions. I am just about done with your lack of listening!');
 }
 
 var question6 = prompt('').toLowerCase();
 console.log(question6);
 if (question6 === 'yes' || question6 === 'y') {
-  // alert(user + ', you are correct! Congratulations, you get to live for another round.');
+  // alert(user + ', you are correct! Congratulations, you made it through the game alive!');
 } else if (question6 === 'no' || question6 === 'n') {
   // alert(user + ', you are incorrect! Watch it, too many wrong answers and you may not live through this game...');
 } else {
-  // alert(user + ', you are terrible at following instructions. I will take mercy for now, DON'T SCREW UP AGAIN!!');
+  // alert(user + ', you are terrible at following instructions. I will take mercy for now, DON\'T SCREW UP AGAIN!!');
 }
