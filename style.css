@@ -1,3 +1,8 @@
-/* body {
+body {
+  background-image: url("../about_me/images/gym.jpg");
+}
 
-} */
+header {
+  color: blue;
+  font-size: 10em;
+}
