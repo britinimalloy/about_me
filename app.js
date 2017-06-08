@@ -64,39 +64,31 @@ if (question6 === 'yes' || question6 === 'y') {
 */
 
 var question7 = NaN;
-question7 = prompt('Next question: ' + user + ', can you guess my favorite number?');
+question7 = parseInt(prompt('Next question: ' + user + ', can you guess my favorite number?'));
 console.log(question7);
-alert('hello');
+/*alert('hello');
 console.log('hello');
 console.log(parseInt(question7));
 var count = 1;
 console.log(count);
 var input = parseInt(question7);
-console.log(input);
+console.log(input);*/
 
-for (var ii = count; ii < 5; ii++) {
-  while (ii < 5 && input != 5) {
-    alert('stop. you\'re wrong');
-    console.log('stop. you\'re wrong');
-    alert(user + ', you have guessed ' + ii + ' times.');
-    console.log('you have guessed ' + ii + ' times');
-    if (isNaN(input)) {
-      console.log(input + ' this is not a number');
-      input = parseInt(prompt(input + ' That is not a number dummy. Pick a number.'));
-    } else if (input > 5) {
-      console.log(input + ' pick a lower number');
-      input = parseInt(prompt(input + ' That is wrong, pick a lower number.'));
-    } else if (input < 5) {
-      console.log(input + ' pick a higher number');
-      input = parseInt(prompt(input + ' That is wrong, pick a higher number.'));
-    } else if (ii > 4) {
-      alert(user + ', you have guessed incorrectly 4 times. You are done.');
-      ii = 5;
-    } else {
-      alert('Yay! You got it correct!');
-      console.log('Yay it is correct!');
-    }
-    console.log(ii);
-    ii++;
+for (var ii = 1; ii < 5; ii++) {
+  if (question7 === 5) {
+    alert('Yay! You got it correct!');
+    console.log('Yay it is correct!');
+  }/* else */
+  if (ii >= 5) {
+    alert(user + ', you have guessed incorrectly 4 times. You are done.');
+  }
+  if (isNaN(question7)) {
+    //
+  } else if (question7 > 5) {
+    //
+  } else if(question7 < 5) {
+    //
   }
 }
+
+//question8 = ;
