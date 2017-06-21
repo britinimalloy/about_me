@@ -1,5 +1,8 @@
 body {
   background-image: url("../about_me/images/gym.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
 }
 
 header {

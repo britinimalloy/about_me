@@ -7,10 +7,10 @@ console.log(user);
 var keepCount = 0;
 var userGuesses;
 
-/* alert('Want to play a game? It\'ll be fun, I PROMISE!');
+alert('Want to play a game? It\'ll be fun, I PROMISE!');
 alert('I\'m going to ask you a series of questions, you MUST answer correctly. Your life depends on it!');
 alert('Just kidding...');
-alert('Or AM I???'); */
+alert('Or AM I???');
 
 var questions = [
   'Next question: ' + user + ', Do you think I, the wonderful and magnificent Britini, lift weights? Answer with a yes or no. OR ELSE!',
@@ -49,7 +49,7 @@ var responses = [
 function askQuestion () {
   for (var i = 0; i < questions.length; i++) {
     userGuesses = prompt(questions[i]);
-    console.log(userGuesses);
+    console.log(questions[i],'/',userGuesses);
     if(!userGuesses) {
       alert(responses[2][i]);
 //      keepCount--;
@@ -74,14 +74,6 @@ function askQuestion () {
 
 askQuestion();
 
-/*alert('hello');
-console.log('hello');
-console.log(parseInt(question7));
-var count = 1;
-console.log(count);
-var input = parseInt(question7);
-console.log(input);*/
-
 var myAnswer = 5;
 var question7;
 
@@ -97,7 +89,7 @@ function gameCounter (numberOfGuesses) {
       console.log('Yay it is correct!');
       keepCount++;
       break;
-    }/* else */
+    }
     if (ii === 4) {
       alert(user + ', you have guessed incorrectly 4 times. You are done.');
       break;
