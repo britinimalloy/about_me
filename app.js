@@ -1,9 +1,7 @@
 'use strict';
 
-console.log('hello world');
-
 var user = prompt('First question: What is your name?').toUpperCase();
-console.log(user);
+console.log('user name: ' + user);
 var keepCount = 0;
 var userGuesses;
 
@@ -82,7 +80,7 @@ gameCounter(4);
 function gameCounter (numberOfGuesses) {
   for (var ii = 1; ii <= numberOfGuesses; ii++) {
     question7 = parseInt(prompt('Next question: ' + user + ', can you guess my favorite number? You have ' + (numberOfGuesses - ii + 1) + ' guesses remaining.'));
-    console.log(question7);
+    console.log('question 7: ' + question7);
     console.log(ii);
     if (question7 === myAnswer) {
       alert('Yay! You got it correct!');
@@ -113,7 +111,7 @@ getAnimal(6);
 function getAnimal (guesses) {
   for (var ii = 1; ii <= guesses; ii++) {
     var animalGuess = prompt('What animal do you think I have ever owned before?');
-    console.log(animalGuess);
+    console.log('animal guess: ' + animalGuess);
     if (animals.includes(animalGuess)) {
       keepCount++;
       alert('Correct!');
