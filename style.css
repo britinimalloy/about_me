@@ -7,16 +7,34 @@ body {
 
 header {
   border: 5px solid blue;
-  padding: 2.5px;
+  padding: 25px;
   width: 565px;
-  /* margin: 5px; */
-  /* margin-bottom: 10px; */
   margin: 0 auto; /* this is kind of centering the element based on how much white space there is */
   color: blue;
   font-size: 3em;
+  text-align: center;
 }
 
 h2 {
   margin: inherit;
   color: orange;
 }
+
+article {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  /*text-emphasis: ;*/
+}
+
+.text_screen {
+    position: fixed;
+    overflow: scroll;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(200,200,200,0.75);
+    z-index: 10;
+    padding: 40px;
+  }
